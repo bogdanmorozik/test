@@ -1,0 +1,546 @@
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+a {text-decoration: none;}
+.menu-main {
+  list-style: none;
+  margin: 10px 10px 0 0;
+  padding: 0 0 0 ;
+  text-align: center;
+  background: white;
+}
+header{
+  width: 70%;
+ margin: auto;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  right: 150px;
+  padding-bottom: 20px;
+  margin: 0px 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: black;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: 15px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 100px;}
+.curent{margin-left: 100px;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 10px 30px;
+}
+}
+#logo{
+  margin-left:100px;
+}
+.double-border-button {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 4px solid #f1c40f;
+  color: #f1c40f;
+  font-family: 'Montserrat', sans-serif;
+  transition: .4s;
+}
+.double-border-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 4px solid rgba(0, 0, 0, 0);
+  transition: .4s;
+}
+.double-border-button:hover:after {
+  border-color: #f1c40f;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+#button{
+  position: absolute;
+  right: 300px;
+  top: 0;
+}
+#fon{
+  height: 500px;
+  width: 70%;
+  margin: auto;
+  background: rgb(0,212,255);
+background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(57,37,213,1) 0%, rgba(53,50,107,1) 99%);
+  margin-top:20px;
+}
+#img{
+  padding-top:50px;
+  padding-right: 50px; 
+}
+#text_fona{
+  color:white;
+  padding-left: 100px;
+  padding-top: 100px;
+  font-size: 40pt;
+}
+#text_fona2{
+color:#D1D1D1;
+  padding-left: 100px;
+  font-size: 20pt;
+}
+.shine-button {
+  position:absolute;
+  left: 400px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .3s ease-in-out;
+}
+.shine-button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+.shine-button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+#fon2{
+  height: 600px;
+  width: 70%;
+  margin: auto;
+  background-color: #FDEBF4;
+  
+}
+#img2{
+  padding-top:100px;
+  padding-left: 200px; 
+}
+#login{
+  font-size: 20pt;
+  padding-top: 50px;
+  padding-left: 700px; 
+}
+.pole{
+  padding-left: 10px;
+  margin:10px; 
+  height: 40px;
+  width: 80%;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+#check{
+  font-size: 18pt;
+}
+#check2{
+  color:gray;
+  font-size: 14pt;
+}
+.shine-button1 {
+
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background:#fe6637;
+  transition: .3s ease-in-out;
+}
+.shine-button1:hover {
+  background: #fff;
+  color: #fe6637;
+}
+.shine-button1:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+.team{
+  width: 70%;
+  margin: auto;
+  background-color: white;
+}
+#img3{
+padding-left:0px;
+padding-top:100px;
+margin-right: 100px;
+}
+.text_top{
+  padding-top:150px; 
+  
+}
+.btn{
+  box-shadow: 0px 0px 5px 5px gray;
+  height: 300px;
+  width: 350px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+footer{
+  padding-top: 5px;
+  border-top:1px solid gray; 
+}
+#btnl{
+  margin-right: 100px;
+  
+}
+#i1{
+  padding-left: 14px;
+}
+.text_right1{
+  padding-top:10px;   
+  color:gray;
+  font-size: 16pt;
+}
+.text_left{
+  padding-left:0px; 
+  font-size: 10pt;
+}
+.vusiti{
+  height: 40px;
+  width: 90%;
+}
+#sd{
+ color: gray;
+ font-size: 16pt;
+}
+#zah{
+  padding-top: 60px;
+  font-size: 16pt;
+}
+#img4{
+padding-right:100px;
+padding-top:100px;
+}
+.boss1{
+height: 600px;
+}
+.vusiti1{
+  padding-left: 100px;
+  height: 40px;
+  width: 35%;
+}
+.slide{
+height: 600px;
+width: 70%;
+margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  box-sizing: border-box;
+background-color: #EEEEEE;
+}
+#text_slide{
+  padding-left:100px;
+  padding-top:100px;
+  margin: 100px;
+  height: 100px;
+  width: 250px;
+}
+#rights{
+  position: relative;
+  right: 100px;
+  top: 70px;
+  height: 200px;
+  width: 45%;
+}
+#slider { 
+position: relative;
+right: 100px;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+  width: 20%;
+  float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+  width: 500%;
+  line-height: 0;
+}
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+  width: 100%;
+  overflow: hidden;
+}
+article img{ /*размер изображений слайдера*/
+  width: 100%;
+}
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+  max-width: 960px; /*максимальнная длинна*/
+}
+#slider_bl{
+  width: 70%;
+  margin: auto;
+}
+#cm{
+  width: 70%;
+  margin: auto;  
+}
+.tools{
+  display:flex;
+  flex-direction:row;
+}
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+  background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+  float: left;
+  margin: 0 0 0 -84px; /*сдвиг влево*/
+  display: block;
+  height: 68px;
+  width: 68px;
+}
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+  background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
+  float: right;
+  margin: 0 -84px 0 0; /*сдвиг вправо*/
+  display: block;
+  height: 68px;
+  width: 68px;
+}
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+  cursor: pointer;
+}
+.all input{ 
+  /*скрывает стандартные инпуты (чекбоксы) на странице*/
+  display: none;
+}
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+  margin-left: 0;
+}
+#switch2:checked ~ #slides .image{
+  margin-left: -100%;
+}
+#switch3:checked ~ #slides .image{
+  margin-left: -200%;
+}
+#switch4:checked ~ #slides .image{
+  margin-left: -300%;
+}
+#switch5:checked ~ #slides .image{
+  margin-left: -400%;
+}
+#controls{ /*положение блока всех управляющих элементов*/
+  margin: -5% 0 0 0;
+  width: 100%;
+  height: 50px;
+}
+#active label{ /*стиль отдельного переключателя*/
+  border-radius: 10px; /*скругление углов*/
+  display: inline-block; /*расположение в строку*/
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+}
+#active{ /*расположение блока с переключателями*/
+  margin: 3% 0 0;
+  text-align: center;
+}
+#active label:hover{ /*поведение чекбокса при наведении*/
+  background: #76c8ff;
+  border-color: #777 !important; /*выполнение в любом случае*/
+}
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+  background: #18a3dd;
+  border-color: #18a3dd !important;
+}
+#slides .image{ /*анимация пролистывания изображений*/
+  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+  opacity: 0.6;
+}
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+  transition: opacity 0.2s ease-out;
+}
+#slider_bl .wrapper{max-width:60em;margin:1em auto;position:relative}
+#slider_bl input{display:none}
+#slider_bl .inner{width:500%;line-height:0}
+#slider_bl article{width:20%;float:left;position:relative}
+#slider_bl article img{width:100%}
+#slider_bl .slider-prev-next-control{
+height:50px;
+position:absolute;
+top:50%;
+width:100%;
+-webkit-transform:translateY(-50%);
+-moz-transform:translateY(-50%);
+-ms-transform:translateY(-50%);
+-o-transform:translateY(-50%);
+transform:translateY(-50%)}
+#slider_bl .slider-prev-next-control label{
+display:none;
+width:40px;
+height:40px;
+border-radius:50%;
+background:#fff;
+opacity:.7}
+#slider_bl .slider-prev-next-control label:hover{opacity:1}
+#slider_bl .slider-dot-control{position:absolute;width:100%;bottom:0;text-align:center}
+#slider_bl .slider-dot-control label{
+cursor:pointer;border-radius:5px;
+display:inline-block;width:10px;
+height:10px;
+background:#bbb;
+-webkit-transition:all.3s;
+-moz-transition:all .3s;transition:all .3s}
+#slider_bl .slider-dot-control label:hover{background:#ccc;border-color:#777}
+#slider_bl .info{
+position:absolute;
+font-style:italic;
+line-height:20px;
+opacity:0;
+color:#000;
+text-align:left;
+-webkit-transition:all 1s ease-out .6s;
+-moz-transition:all 1s ease-out .6s;transition:all 1s ease-out .6s}
+#slider_bl .info h3{
+color:#fcfff4;
+margin:0 0 5px;
+font-weight:400;
+font-size:1.5em;
+font-style:normal}
+#slider_bl .info.top-left{top:30px;left:30px}
+#slider_bl .info.top-right{top:30px;right:30px}
+#slider_bl .info.bottom-left{bottom:30px;left:30px}
+#slider_bl .info.bottom-right{bottom:30px;right:30px}
+#slider_bl .slider-wrapper{
+width:100%;overflow:hidden;
+border-radius:5px;
+box-shadow:1px 1px 4px #666;
+background:#fff;
+background:#fcfff4;
+-webkit-transform:translateZ(0);
+-moz-transform:translateZ(0);
+-ms-transform:translateZ(0);
+-o-transform:translateZ(0);
+transform:translateZ(0);
+-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;
+transition:all .5s ease-out}
+#slider_bl .slider-wrapper .inner{
+-webkit-transform:translateZ(0);
+-moz-transform:translateZ(0);
+-ms-transform:translateZ(0);
+-o-transform:translateZ(0);
+transform:translateZ(0);
+-webkit-transition:all .8s cubic-bezier(.77,0,.175,1);
+-moz-transition:all .8s cubic-bezier(.77,0,.175,1);
+transition:all .8s cubic-bezier(.77,0,.175,1)}
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)::after{
+font-family:FontAwesome;
+font-style:normal;
+font-weight:400;
+text-decoration:inherit;
+margin:0;
+line-height:38px;
+font-size:3em;
+display:block;
+color:#777}
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)::after{
+content:"\f105";padding-left:15px}
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1){
+display:block;float:right;margin-right:5px}
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4){
+display:block;float:left;margin-left:5px}
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)::after{content:"\f104";padding-left:8px}
+#slider_bl #slide1:checked~.slider-dot-control label:nth-child(1),
+#slider_bl #slide2:checked~.slider-dot-control label:nth-child(2),
+#slider_bl #slide3:checked~.slider-dot-control label:nth-child(3),
+#slider_bl #slide4:checked~.slider-dot-control label:nth-child(4),
+#slider_bl #slide5:checked~.slider-dot-control label:nth-child(5){background:#333}
+#slider_bl #slide1:checked~.slider-wrapper article:nth-child(1) .info,
+#slider_bl #slide2:checked~.slider-wrapper article:nth-child(2) .info,
+#slider_bl #slide3:checked~.slider-wrapper article:nth-child(3) .info,
+#slider_bl #slide4:checked~.slider-wrapper article:nth-child(4) .info,
+#slider_bl #slide5:checked~.slider-wrapper article:nth-child(5) .info{opacity:1}
+#slider_bl #slide1:checked~.slider-wrapper .inner{margin-left:0}
+#slider_bl #slide2:checked~.slider-wrapper .inner{margin-left:-100%}
+#slider_bl #slide3:checked~.slider-wrapper .inner{margin-left:-200%}
+#slider_bl #slide4:checked~.slider-wrapper .inner{margin-left:-300%}
+#slider_bl #slide5:checked~.slider-wrapper .inner{margin-left:-400%}
+@media only screen and (max-width:850px) and (min-width:450px){
+#slider_bl .slider-wrapper{border-radius:0}}@media only screen and (max-width:450px){
+#slider_bl .slider-wrapper{border-radius:0}#slider_bl .slider-wrapper .info{opacity:0}}
+@media only screen and (min-width:850px){#slider_bl body{padding:0 80px}}
